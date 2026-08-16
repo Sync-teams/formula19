@@ -50,7 +50,7 @@ export function SocialForm({ socialLink, action }: SocialFormProps) {
         </div>
       )}
 
-      <div className="rounded-xl border border-white/5 bg-zinc-900 p-6 space-y-4">
+      <div className="rounded-xl border border-white/10 bg-card p-6 space-y-4">
         <Field label="Platform" required>
           <select
             name="platform"
@@ -59,7 +59,7 @@ export function SocialForm({ socialLink, action }: SocialFormProps) {
             className="input"
           >
             {PLATFORMS.map((p) => (
-              <option key={p} value={p} className="bg-zinc-900">
+              <option key={p} value={p} className="bg-card">
                 {p.charAt(0).toUpperCase() + p.slice(1)}
               </option>
             ))}

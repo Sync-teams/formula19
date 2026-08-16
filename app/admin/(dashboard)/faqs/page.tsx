@@ -32,7 +32,7 @@ export default async function AdminFaqsPage() {
       </div>
 
       {!faqs || faqs.length === 0 ? (
-        <div className="rounded-xl border border-white/5 bg-zinc-900 p-12 text-center text-zinc-400">
+        <div className="rounded-xl border border-white/10 bg-card p-12 text-center text-zinc-400">
           No FAQs yet.
         </div>
       ) : (
@@ -40,7 +40,7 @@ export default async function AdminFaqsPage() {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="rounded-xl border border-white/5 bg-zinc-900 p-5"
+              className="rounded-xl border border-white/10 bg-card p-5"
             >
               <div className="mb-3 flex items-start justify-between gap-4">
                 <div className="flex-1">

@@ -90,7 +90,7 @@ export default async function AdminDashboard() {
             <Link
               key={card.label}
               href={card.href}
-              className="group rounded-xl border border-white/5 bg-zinc-900 p-5 transition-all hover:border-red-500/30 hover:bg-zinc-900/80"
+              className="group rounded-xl border border-white/10 bg-card p-5 transition-all hover:border-red-500/30 hover:bg-card/80"
             >
               <div className="mb-4 flex items-center justify-between">
                 <div className={`rounded-lg ${card.bg} p-2.5`}>
@@ -109,8 +109,8 @@ export default async function AdminDashboard() {
         })}
       </div>
 
-      <div className="rounded-xl border border-white/5 bg-zinc-900">
-        <div className="flex items-center justify-between border-b border-white/5 px-6 py-4">
+      <div className="rounded-xl border border-white/10 bg-card">
+        <div className="flex items-center justify-between border-b border-white/10 px-6 py-4">
           <h2 className="text-lg font-semibold text-white">Recent Inquiries</h2>
           <Link
             href="/admin/inquiries"
@@ -122,7 +122,7 @@ export default async function AdminDashboard() {
         </div>
 
         {recent.length === 0 ? (
-          <div className="p-12 text-center text-sm text-zinc-500">
+          <div className="p-12 text-center text-sm text-zinc-400">
             No inquiries yet.
           </div>
         ) : (
@@ -145,7 +145,7 @@ export default async function AdminDashboard() {
                     {inq.subject || inq.message}
                   </p>
                 </div>
-                <div className="text-xs text-zinc-500">
+                <div className="text-xs text-zinc-400">
                   {new Date(inq.created_at).toLocaleDateString()}
                 </div>
               </div>

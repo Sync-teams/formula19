@@ -44,7 +44,7 @@ export function ProductForm({ product, action }: ProductFormProps) {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-2">
-          <div className="rounded-xl border border-white/5 bg-zinc-900 p-6">
+          <div className="rounded-xl border border-white/10 bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold text-white">Details</h2>
             <div className="space-y-4">
               <Field label="Name" required>
@@ -106,7 +106,7 @@ export function ProductForm({ product, action }: ProductFormProps) {
             </div>
           </div>
 
-          <div className="rounded-xl border border-white/5 bg-zinc-900 p-6">
+          <div className="rounded-xl border border-white/10 bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold text-white">Rating</h2>
             <div className="grid grid-cols-2 gap-4">
               <Field label="Rating (0-5)">
@@ -134,7 +134,7 @@ export function ProductForm({ product, action }: ProductFormProps) {
         </div>
 
         <div className="space-y-6">
-          <div className="rounded-xl border border-white/5 bg-zinc-900 p-6">
+          <div className="rounded-xl border border-white/10 bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold text-white">Image</h2>
             <div className="relative mb-3 aspect-square overflow-hidden rounded-lg bg-gradient-to-br from-zinc-800 via-black to-zinc-900">
               {imagePreview ? (
@@ -145,7 +145,7 @@ export function ProductForm({ product, action }: ProductFormProps) {
                   className="object-contain p-4 mix-blend-screen brightness-110"
                 />
               ) : (
-                <div className="flex h-full items-center justify-center text-sm text-zinc-500">
+                <div className="flex h-full items-center justify-center text-sm text-zinc-400">
                   No image
                 </div>
               )}
@@ -159,12 +159,12 @@ export function ProductForm({ product, action }: ProductFormProps) {
                 placeholder="/images/wheel-1.png"
               />
             </Field>
-            <p className="mt-2 text-xs text-zinc-500">
+            <p className="mt-2 text-xs text-zinc-400">
               Use a path like /images/wheel-1.png or a full URL.
             </p>
           </div>
 
-          <div className="rounded-xl border border-white/5 bg-zinc-900 p-6">
+          <div className="rounded-xl border border-white/10 bg-card p-6">
             <h2 className="mb-4 text-lg font-semibold text-white">Visibility</h2>
             <div className="space-y-3">
               <label className="flex items-center gap-3">

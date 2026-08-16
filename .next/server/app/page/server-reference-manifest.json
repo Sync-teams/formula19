@@ -1,0 +1,29 @@
+{
+  "node": {
+    "40daadc3174f1ee90e12b89f6f61417d9a6d278989": {
+      "workers": {
+        "app/page": {
+          "moduleId": 12007,
+          "async": false,
+          "exportedName": "submitQuoteInquiry",
+          "filename": "app/actions/contact.ts"
+        }
+      },
+      "exportedName": "submitQuoteInquiry",
+      "filename": "app/actions/contact.ts"
+    },
+    "602d109121b731cfe89426bfb7ce9df1e375eb070a": {
+      "workers": {
+        "app/page": {
+          "moduleId": 12007,
+          "async": false,
+          "exportedName": "submitInquiry",
+          "filename": "app/actions/contact.ts"
+        }
+      },
+      "exportedName": "submitInquiry",
+      "filename": "app/actions/contact.ts"
+    }
+  },
+  "edge": {}
+}

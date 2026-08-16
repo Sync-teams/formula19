@@ -44,7 +44,7 @@ export function AdminSidebar({ userEmail }: AdminSidebarProps) {
   return (
     <>
       {/* Mobile top bar */}
-      <header className="fixed left-0 right-0 top-0 z-30 flex items-center justify-between border-b border-white/5 bg-zinc-950 px-4 py-3 lg:hidden">
+      <header className="fixed left-0 right-0 top-0 z-30 flex items-center justify-between border-b border-white/10 bg-sidebar px-4 py-3 lg:hidden">
         <Link href="/admin" className="font-heading text-xl">
           <span className="text-white">FORMULA</span>
           <span className="text-red-500">19</span>
@@ -60,12 +60,12 @@ export function AdminSidebar({ userEmail }: AdminSidebarProps) {
 
       {/* Sidebar */}
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-64 transform border-r border-white/5 bg-zinc-950 transition-transform duration-200 lg:translate-x-0 ${
+        className={`fixed inset-y-0 left-0 z-40 w-64 transform border-r border-white/10 bg-sidebar transition-transform duration-200 lg:translate-x-0 ${
           isMobileOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="flex h-full flex-col">
-          <div className="border-b border-white/5 p-6">
+          <div className="border-b border-white/10 p-6">
             <Link
               href="/admin"
               className="block"
@@ -75,7 +75,7 @@ export function AdminSidebar({ userEmail }: AdminSidebarProps) {
                 <span className="text-white">FORMULA</span>
                 <span className="text-red-500">19</span>
               </span>
-              <p className="mt-1 text-[10px] uppercase tracking-widest text-zinc-500">
+              <p className="mt-1 text-[10px] uppercase tracking-widest text-zinc-400">
                 Admin Panel
               </p>
             </Link>
@@ -103,7 +103,7 @@ export function AdminSidebar({ userEmail }: AdminSidebarProps) {
             })}
           </nav>
 
-          <div className="border-t border-white/5 p-4">
+          <div className="border-t border-white/10 p-4">
             <Link
               href="/"
               target="_blank"
@@ -112,7 +112,7 @@ export function AdminSidebar({ userEmail }: AdminSidebarProps) {
               <ExternalLink className="h-4 w-4" />
               View Website
             </Link>
-            <div className="mb-3 px-3 py-2 text-xs text-zinc-500">
+            <div className="mb-3 px-3 py-2 text-xs text-zinc-400">
               {userEmail}
             </div>
             <form action={signOut}>

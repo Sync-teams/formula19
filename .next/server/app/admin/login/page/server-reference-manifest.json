@@ -1,0 +1,29 @@
+{
+  "node": {
+    "003a9f6f8e5c7e425396c76167e1c89f7d1362358d": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": 95706,
+          "async": false,
+          "exportedName": "adminExists",
+          "filename": "app/actions/setup.ts"
+        }
+      },
+      "exportedName": "adminExists",
+      "filename": "app/actions/setup.ts"
+    },
+    "60d6a5af370c2fdc91116abfd17de8adcac8de3f74": {
+      "workers": {
+        "app/admin/login/page": {
+          "moduleId": 95706,
+          "async": false,
+          "exportedName": "createFirstAdmin",
+          "filename": "app/actions/setup.ts"
+        }
+      },
+      "exportedName": "createFirstAdmin",
+      "filename": "app/actions/setup.ts"
+    }
+  },
+  "edge": {}
+}

@@ -10,6 +10,8 @@ const nextConfig = {
       { protocol: "https", hostname: "assets.wheelpros.com" },
       { protocol: "https", hostname: "images.wheelpros.com" },
       { protocol: "https", hostname: "5129608.app.netsuite.com" },
+      { protocol: "https", hostname: "www.canadacustomautoworks.com" },
+      { protocol: "https", hostname: "canadacustomautoworks.com" },
     ],
   },
 }

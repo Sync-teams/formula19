@@ -62,10 +62,10 @@ export function HeroSection({ content }: HeroSectionProps) {
           alt="Performance vehicle at our showroom"
           fill
           priority
-          className="object-cover object-right opacity-60"
+          className="object-cover object-right opacity-85"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/85 to-background/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/35" />
       </div>
 
       <div className="relative mx-auto max-w-[1400px] px-6 pt-20 pb-10 lg:pt-28 lg:pb-14">

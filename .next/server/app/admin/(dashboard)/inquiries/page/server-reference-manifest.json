@@ -1,0 +1,41 @@
+{
+  "node": {
+    "0038a641af190d527ecc5f8a8db9bf25455af92d9c": {
+      "workers": {
+        "app/admin/(dashboard)/inquiries/page": {
+          "moduleId": 29379,
+          "async": false,
+          "exportedName": "signOut",
+          "filename": "app/actions/admin.ts"
+        }
+      },
+      "exportedName": "signOut",
+      "filename": "app/actions/admin.ts"
+    },
+    "60178a099831901ba337440cade76c7687f86a07d0": {
+      "workers": {
+        "app/admin/(dashboard)/inquiries/page": {
+          "moduleId": 29379,
+          "async": false,
+          "exportedName": "updateInquiryStatus",
+          "filename": "app/actions/admin.ts"
+        }
+      },
+      "exportedName": "updateInquiryStatus",
+      "filename": "app/actions/admin.ts"
+    },
+    "40f4c547dd7d5ebe7f602196ecb22f99b010dfc24c": {
+      "workers": {
+        "app/admin/(dashboard)/inquiries/page": {
+          "moduleId": 29379,
+          "async": false,
+          "exportedName": "deleteInquiry",
+          "filename": "app/actions/admin.ts"
+        }
+      },
+      "exportedName": "deleteInquiry",
+      "filename": "app/actions/admin.ts"
+    }
+  },
+  "edge": {}
+}

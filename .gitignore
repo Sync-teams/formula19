@@ -4,7 +4,13 @@
 /node_modules
 
 # next.js
-/.next/
+# The production build in .next/ is committed on purpose — deploys ship the
+# locally built output instead of building on the server. Only the local
+# caches are excluded: .next/dev is the dev server's turbopack cache (~317MB,
+# with single files over GitHub's 100MB limit) and .next/cache is the build
+# cache. Neither is needed to run `next start`.
+/.next/dev/
+/.next/cache/
 /out/
 
 # production
@@ -25,3 +31,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+# supplier inventory feeds (contain dealer/wholesale pricing)
+/data/*.csv
+
+# macOS
+.DS_Store

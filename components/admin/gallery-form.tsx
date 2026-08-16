@@ -41,7 +41,7 @@ export function GalleryForm({ image, action }: GalleryFormProps) {
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-2">
-          <div className="rounded-xl border border-white/5 bg-zinc-900 p-6 space-y-4">
+          <div className="rounded-xl border border-white/10 bg-card p-6 space-y-4">
             <Field label="Title" required>
               <input
                 name="title"
@@ -92,7 +92,7 @@ export function GalleryForm({ image, action }: GalleryFormProps) {
           </div>
         </div>
 
-        <div className="rounded-xl border border-white/5 bg-zinc-900 p-6">
+        <div className="rounded-xl border border-white/10 bg-card p-6">
           <h2 className="mb-4 text-lg font-semibold text-white">Image</h2>
           <div className="relative mb-3 aspect-square overflow-hidden rounded-lg bg-gradient-to-br from-zinc-800 via-black to-zinc-900">
             {imagePreview ? (
@@ -103,7 +103,7 @@ export function GalleryForm({ image, action }: GalleryFormProps) {
                 className="object-contain p-4 mix-blend-screen brightness-110"
               />
             ) : (
-              <div className="flex h-full items-center justify-center text-sm text-zinc-500">
+              <div className="flex h-full items-center justify-center text-sm text-zinc-400">
                 No image
               </div>
             )}

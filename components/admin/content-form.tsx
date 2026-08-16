@@ -52,13 +52,13 @@ export function ContentForm({ content, fieldGroups }: ContentFormProps) {
       {fieldGroups.map((group) => (
         <div
           key={group.title}
-          className="rounded-xl border border-white/5 bg-zinc-900 p-6"
+          className="rounded-xl border border-white/10 bg-card p-6"
         >
           <h2 className="mb-1 text-lg font-semibold text-white">
             {group.title}
           </h2>
           {group.description && (
-            <p className="mb-4 text-sm text-zinc-500">{group.description}</p>
+            <p className="mb-4 text-sm text-zinc-400">{group.description}</p>
           )}
           <div className="space-y-4">
             {group.fields.map((field) => (

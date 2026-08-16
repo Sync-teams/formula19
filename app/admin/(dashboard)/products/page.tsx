@@ -33,7 +33,7 @@ export default async function AdminProductsPage() {
       </div>
 
       {!products || products.length === 0 ? (
-        <div className="rounded-xl border border-white/5 bg-zinc-900 p-12 text-center">
+        <div className="rounded-xl border border-white/10 bg-card p-12 text-center">
           <p className="text-zinc-400">No products yet.</p>
           <Link
             href="/admin/products/new"
@@ -44,10 +44,10 @@ export default async function AdminProductsPage() {
           </Link>
         </div>
       ) : (
-        <div className="overflow-hidden rounded-xl border border-white/5 bg-zinc-900">
+        <div className="overflow-hidden rounded-xl border border-white/10 bg-card">
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="border-b border-white/5 bg-white/[0.02] text-left">
+              <thead className="border-b border-white/10 bg-white/[0.02] text-left">
                 <tr>
                   <th className="px-4 py-3 font-medium text-zinc-400">Product</th>
                   <th className="px-4 py-3 font-medium text-zinc-400">Category</th>
@@ -63,7 +63,7 @@ export default async function AdminProductsPage() {
                   <tr key={p.id} className="hover:bg-white/[0.02]">
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-3">
-                        <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-lg bg-zinc-800">
+                        <div className="relative h-12 w-12 flex-shrink-0 overflow-hidden rounded-lg bg-card">
                           {p.image_url && (
                             <Image
                               src={p.image_url || "/placeholder.svg"}
@@ -82,7 +82,7 @@ export default async function AdminProductsPage() {
                               </span>
                             )}
                           </div>
-                          <p className="text-xs text-zinc-500">
+                          <p className="text-xs text-zinc-400">
                             {p.size} {p.width ? `· ${p.width}` : ""}
                           </p>
                         </div>

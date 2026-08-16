@@ -33,7 +33,7 @@ export default async function AdminGalleryPage() {
       </div>
 
       {!images || images.length === 0 ? (
-        <div className="rounded-xl border border-white/5 bg-zinc-900 p-12 text-center text-zinc-400">
+        <div className="rounded-xl border border-white/10 bg-card p-12 text-center text-zinc-400">
           No gallery images yet.
         </div>
       ) : (
@@ -41,7 +41,7 @@ export default async function AdminGalleryPage() {
           {images.map((img) => (
             <div
               key={img.id}
-              className="overflow-hidden rounded-xl border border-white/5 bg-zinc-900"
+              className="overflow-hidden rounded-xl border border-white/10 bg-card"
             >
               <div className="relative aspect-square bg-gradient-to-br from-zinc-800 via-black to-zinc-900 p-4">
                 <Image
@@ -56,11 +56,11 @@ export default async function AdminGalleryPage() {
                   </span>
                 )}
               </div>
-              <div className="border-t border-white/5 p-4">
+              <div className="border-t border-white/10 p-4">
                 <p className="truncate text-sm font-medium text-white">
                   {img.title}
                 </p>
-                <p className="mb-3 text-xs text-zinc-500">{img.category}</p>
+                <p className="mb-3 text-xs text-zinc-400">{img.category}</p>
                 <div className="flex items-center justify-end gap-2">
                   <Link
                     href={`/admin/gallery/${img.id}`}

@@ -37,7 +37,7 @@ export function FaqForm({ faq, action }: FaqFormProps) {
         </div>
       )}
 
-      <div className="space-y-4 rounded-xl border border-white/5 bg-zinc-900 p-6">
+      <div className="space-y-4 rounded-xl border border-white/10 bg-card p-6">
         <div>
           <label className="mb-1.5 block text-xs font-medium uppercase tracking-wide text-zinc-400">
             Question <span className="text-red-500">*</span>

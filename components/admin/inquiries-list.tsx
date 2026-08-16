@@ -81,7 +81,7 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
       </div>
 
       {filtered.length === 0 ? (
-        <div className="rounded-xl border border-white/5 bg-zinc-900 p-12 text-center text-zinc-400">
+        <div className="rounded-xl border border-white/10 bg-card p-12 text-center text-zinc-400">
           No inquiries in this filter.
         </div>
       ) : (
@@ -94,7 +94,7 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
             return (
               <div
                 key={inq.id}
-                className="overflow-hidden rounded-xl border border-white/5 bg-zinc-900"
+                className="overflow-hidden rounded-xl border border-white/10 bg-card"
               >
                 <button
                   onClick={() => setExpandedId(isExpanded ? null : inq.id)}
@@ -119,17 +119,17 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
                   </div>
 
                   <div className="text-right">
-                    <div className="text-xs text-zinc-500">
+                    <div className="text-xs text-zinc-400">
                       {new Date(inq.created_at).toLocaleDateString()}
                     </div>
                     <ChevronDown
-                      className={`ml-auto mt-1 h-4 w-4 text-zinc-500 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+                      className={`ml-auto mt-1 h-4 w-4 text-zinc-400 transition-transform ${isExpanded ? "rotate-180" : ""}`}
                     />
                   </div>
                 </button>
 
                 {isExpanded && (
-                  <div className="border-t border-white/5 bg-black/30 p-4">
+                  <div className="border-t border-white/10 bg-black/30 p-4">
                     <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                       <a
                         href={`mailto:${inq.email}`}
@@ -150,7 +150,7 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
                     </div>
 
                     {inq.subject && (
-                      <p className="mb-2 text-xs uppercase tracking-wide text-zinc-500">
+                      <p className="mb-2 text-xs uppercase tracking-wide text-zinc-400">
                         Subject
                       </p>
                     )}
@@ -160,16 +160,16 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
                       </p>
                     )}
 
-                    <p className="mb-2 text-xs uppercase tracking-wide text-zinc-500">
+                    <p className="mb-2 text-xs uppercase tracking-wide text-zinc-400">
                       Message
                     </p>
                     <p className="mb-4 whitespace-pre-wrap text-sm text-zinc-300">
                       {inq.message}
                     </p>
 
-                    <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/5 pt-4">
+                    <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 pt-4">
                       <div className="flex flex-wrap items-center gap-2">
-                        <span className="text-xs text-zinc-500">Status:</span>
+                        <span className="text-xs text-zinc-400">Status:</span>
                         {STATUS_OPTIONS.map((s) => (
                           <button
                             key={s.value}
@@ -177,7 +177,7 @@ export function InquiriesList({ inquiries }: InquiriesListProps) {
                             className={`rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase transition-all ${
                               inq.status === s.value
                                 ? s.color
-                                : "bg-white/5 text-zinc-500 hover:bg-white/10"
+                                : "bg-white/5 text-zinc-400 hover:bg-white/10"
                             }`}
                           >
                             {s.label}
