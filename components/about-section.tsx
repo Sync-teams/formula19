@@ -19,8 +19,8 @@ export function AboutSection({ content }: AboutSectionProps) {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] bg-card overflow-hidden">
               <Image
-                src="/images/pit-garage.jpg"
-                alt="Inside the Formula 19 workshop"
+                src="/images/shop/wheel-wall-grid.jpg"
+                alt="The wheel wall inside the Formula 19 showroom"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -34,7 +34,7 @@ export function AboutSection({ content }: AboutSectionProps) {
 
             {/* Plate label */}
             <div className="mt-4 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-              <span>Plate 02 / The Garage</span>
+              <span>Plate 02 / The Wheel Wall</span>
               <span>F19 Workshop, Kelowna BC</span>
             </div>
           </div>
@@ -92,10 +92,10 @@ export function AboutSection({ content }: AboutSectionProps) {
 
             {/* CTA */}
             <a
-              href="#contact"
+              href="#showroom"
               className="mt-10 inline-flex items-center gap-3 font-display text-lg uppercase tracking-wider text-foreground underline-grow"
             >
-              Visit the garage <ArrowUpRight className="w-5 h-5" />
+              Look inside the shop <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
         </div>

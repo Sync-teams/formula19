@@ -36,3 +36,6 @@ next-env.d.ts
 
 # macOS
 .DS_Store
+
+# full-resolution shop photos (optimized copies live in public/images/shop)
+/photos-original/

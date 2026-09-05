@@ -16,7 +16,7 @@ const nav = [
   { label: "Services", href: "#services", num: "02" },
   { label: "Financing", href: "/financing", num: "03" },
   { label: "Garage", href: "#about", num: "04" },
-  { label: "Gallery", href: "#gallery", num: "05" },
+  { label: "The Shop", href: "#showroom", num: "05" },
   { label: "FAQ", href: "#faq", num: "06" },
   { label: "Contact", href: "#contact", num: "07" },
 ]

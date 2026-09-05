@@ -1,13 +1,13 @@
 [
   {
     "route": "/",
-    "firstLoadUncompressedJsBytes": 847535,
+    "firstLoadUncompressedJsBytes": 857356,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0iwz~d34oj_si.js",
       ".next/static/chunks/0d3shmwh5_nmn.js",
-      ".next/static/chunks/04li-0gcr958s.js",
-      ".next/static/chunks/17uboaqsohs2b.js",
+      ".next/static/chunks/065mncfn8be4g.js",
       ".next/static/chunks/098~3eyj110jx.js",
+      ".next/static/chunks/0gq3jjrdos9wt.js",
       ".next/static/chunks/1305yvtrsxt99.js",
       ".next/static/chunks/0b5b~i.-5xdey.js",
       ".next/static/chunks/0p620ysi~mhk8.js",
@@ -19,13 +19,13 @@
   },
   {
     "route": "/financing",
-    "firstLoadUncompressedJsBytes": 834460,
+    "firstLoadUncompressedJsBytes": 834462,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0iwz~d34oj_si.js",
       ".next/static/chunks/0d3shmwh5_nmn.js",
       ".next/static/chunks/098~3eyj110jx.js",
       ".next/static/chunks/1305yvtrsxt99.js",
-      ".next/static/chunks/0_2mohawrhg91.js",
+      ".next/static/chunks/0vc~sdc1jhmmm.js",
       ".next/static/chunks/0b5b~i.-5xdey.js",
       ".next/static/chunks/0p620ysi~mhk8.js",
       ".next/static/chunks/0pqt~8bl3ukh4.js",

@@ -89,7 +89,7 @@ export function Footer({ content, socials = [] }: FooterProps) {
                 Financing
               </Link>
             </li>
-            <li><a href="/#gallery" className="text-muted-foreground hover:text-primary">Gallery</a></li>
+            <li><a href="/#showroom" className="text-muted-foreground hover:text-primary">The Shop</a></li>
             <li><a href="/#contact" className="text-muted-foreground hover:text-primary">Contact</a></li>
             <li>
               <Link href="/admin/login" className="text-muted-foreground/60 hover:text-primary">

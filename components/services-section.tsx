@@ -47,7 +47,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="relative bg-background py-24 lg:py-32 border-b border-border">
+    <section id="services" className="section-light relative py-24 lg:py-32 border-b border-border">
       <div className="mx-auto max-w-[1400px] px-6">
         {/* Section header */}
         <div className="flex items-end justify-between mb-16 flex-wrap gap-6">

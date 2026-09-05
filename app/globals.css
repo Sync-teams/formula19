@@ -240,3 +240,57 @@
   from { opacity: 0; transform: translateY(-16px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ── Light bands ───────────────────────────────────────────────────────────
+   The page is dark end to end, which gets heavy over a long scroll. A handful
+   of sections opt into a paper-white surface instead. Rather than rewriting
+   their utilities, the section re-declares the palette tokens on itself —
+   `@theme inline` means bg-background / text-foreground / border-border /
+   text-muted-foreground inside all resolve against these, so the whole
+   subtree flips with one class. */
+.section-light {
+  --background: oklch(0.968 0.003 95);         /* warm paper */
+  --foreground: oklch(0.21 0.012 250);         /* graphite ink */
+  --card: #ffffff;
+  --card-foreground: oklch(0.21 0.012 250);
+  --popover: #ffffff;
+  --popover-foreground: oklch(0.21 0.012 250);
+  --secondary: oklch(0.93 0.004 95);
+  --secondary-foreground: oklch(0.21 0.012 250);
+  --muted: oklch(0.93 0.004 95);
+  --muted-foreground: oklch(0.47 0.012 250);
+  --border: rgba(18, 20, 26, 0.14);
+  --input: #ffffff;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Seam between a dark section and the light band below it. */
+.section-light::before {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 3px;
+  background: var(--primary);
+}
+
+/* Fine grid texture for light bands — keeps large white areas from reading flat. */
+.paper-grid {
+  background-image:
+    linear-gradient(to right, rgba(18, 20, 26, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 20, 26, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Lightbox */
+.lightbox-backdrop {
+  animation: search-fade-in 0.25s ease-out both;
+}
+.lightbox-figure {
+  animation: lightbox-zoom 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes lightbox-zoom {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}

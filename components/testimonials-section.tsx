@@ -178,7 +178,7 @@ export function TestimonialsSection() {
   const loopB = [...POSTS.slice().reverse(), ...POSTS.slice().reverse()]
 
   return (
-    <section id="reviews" className="relative bg-card py-20 lg:py-28 overflow-hidden border-y border-border">
+    <section id="reviews" className="section-light relative py-20 lg:py-28 overflow-hidden border-y border-border">
       <div className="mx-auto max-w-[1400px] px-6 mb-12">
         <div className="flex items-end justify-between flex-wrap gap-6">
           <div>
@@ -208,8 +208,8 @@ export function TestimonialsSection() {
 
       {/* Row 1 — left to right */}
       <div className="relative">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-card to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-card to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-background to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-background to-transparent z-10" />
         <div className="flex gap-4 lg:gap-5 w-max animate-marquee py-2">
           {loopA.map((post, i) => (
             <InstagramCard key={`a-${post.handle}-${i}`} post={post} />
@@ -219,8 +219,8 @@ export function TestimonialsSection() {
 
       {/* Row 2 — right to left (reversed loop using fast variant for variation) */}
       <div className="relative mt-5">
-        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-card to-transparent z-10" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-card to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-16 lg:w-32 bg-gradient-to-r from-background to-transparent z-10" />
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-background to-transparent z-10" />
         <div className="flex gap-4 lg:gap-5 w-max animate-marquee-reverse py-2">
           {loopB.map((post, i) => (
             <InstagramCard key={`b-${post.handle}-${i}`} post={post} />

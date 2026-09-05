@@ -1,6 +1,7 @@
 "use client"
 
 import { useActionState } from "react"
+import Image from "next/image"
 import { ArrowUpRight, Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react"
 import { submitInquiry, type ContactFormState } from "@/app/actions/contact"
 
@@ -19,6 +20,9 @@ export function ContactSection({ content }: ContactSectionProps) {
   const addressLine2 = content.contact_address_line2 || "Kelowna, BC V1X 6G4"
   const hours = content.business_hours || "Mon–Sat · 9AM – 6PM"
   const whatsapp = content.whatsapp_number || "17789998473"
+  const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${addressLine1}, ${addressLine2}`,
+  )}`
 
   return (
     <section id="contact" className="relative bg-background py-24 lg:py-32 border-b border-border">
@@ -46,7 +50,7 @@ export function ContactSection({ content }: ContactSectionProps) {
               {[
                 { icon: Phone, label: "Phone", value: phone, href: `tel:${phone.replace(/\D/g, "")}` },
                 { icon: Mail, label: "Email", value: email, href: `mailto:${email}` },
-                { icon: MapPin, label: "Location", value: `${addressLine1}, ${addressLine2}`, href: "#" },
+                { icon: MapPin, label: "Location", value: `${addressLine1}, ${addressLine2}`, href: mapsUrl },
                 { icon: Clock, label: "Hours", value: hours, href: "#" },
               ].map((item) => {
                 const Icon = item.icon
@@ -92,6 +96,37 @@ export function ContactSection({ content }: ContactSectionProps) {
                 </div>
               </div>
               <ArrowUpRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+            </a>
+
+            {/* What to look for when you pull up */}
+            <a
+              href={mapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative block h-64 overflow-hidden border border-border bg-card"
+            >
+              <Image
+                src="/images/shop/storefront-wide.jpg"
+                alt={`Formula 19 storefront at ${addressLine1}`}
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-5 flex items-end justify-between gap-4">
+                <div>
+                  <div className="font-mono text-[10px] uppercase tracking-widest text-white/70 mb-1">
+                    Look for the red sign
+                  </div>
+                  <div className="font-display text-xl uppercase tracking-tight text-white">
+                    {addressLine1}
+                  </div>
+                </div>
+                <span className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white">
+                  Directions
+                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </span>
+              </div>
             </a>
           </div>
 

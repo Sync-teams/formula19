@@ -9,6 +9,7 @@ import { FinancingBanner } from "@/components/financing-banner"
 import { ProductsSection } from "@/components/products-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { AboutSection } from "@/components/about-section"
+import { ShowroomSection } from "@/components/showroom-section"
 import { GallerySection } from "@/components/gallery-section"
 import { FAQSection } from "@/components/faq-section"
 import { ContactSection } from "@/components/contact-section"
@@ -48,6 +49,7 @@ export default async function Home() {
       <TestimonialsSection />
       <BrandLogos />
       <AboutSection content={content} />
+      <ShowroomSection content={content} />
       <GallerySection images={gallery} />
       <FAQSection faqs={faqs} />
       <ContactSection content={content} />
